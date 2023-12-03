@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Додати нову нотатку</title>
+    <link th:href="@{/css/form.css}" rel="stylesheet" />
+</head>
+<body>
+  <form action="add" method="post">
+    <input type="text" name="title" placeholder="Введіть назву нотатки...">
+    <input type="text" name="content" placeholder="Введіть вміст нотатки...">
+    <input type="submit" value="Додати">
+  </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редагувати нотатку</title>
+    <link th:href="@{/css/form.css}" rel="stylesheet" />
+</head>
+<body>
+  <form action="edit" method="post">
+    <input type="hidden" name="id" th:attr="value=${note.id}">
+    <input type="text" name="title" th:attr="value=${note.title}" placeholder="Введіть назву нотатки...">
+    <input type="text" name="content" th:attr="value=${note.content}" placeholder="Введіть вміст нотатки...">
+    <input type="submit" value="Зберегти">
+  </form>
+</body>
+</html>

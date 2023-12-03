@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список нотаток</title>
+    <link th:href="@{/css/list.css}" rel="stylesheet" />
+</head>
+<body>
+    <form action="add" method="get">
+        <input type="submit" value="Додати нотатку">
+    </form>
+
+    <div class="container">
+        <div class="note" th:each="note: ${notes}">
+            <div class="note-content">
+                <div class="field">Назва: <p th:text="${note.title}"></p></div>
+                <div class="field">Вміст: <p th:text="${note.content}"></p></div>
+            </div>
+            <div class="note-buttons">
+                <form action="edit" method="get">
+                    <input type="hidden" name="id" th:attr="value=${note.id}" />
+                    <input type="submit" value="Редагувати">
+                </form>
+
+                <form action="delete" method="post">
+                    <input type="hidden" name="id" th:attr="value=${note.id}" />
+                    <input type="submit" value="Видалити">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
