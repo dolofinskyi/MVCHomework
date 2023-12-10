@@ -1,0 +1,5 @@
+CREATE TABLE note (
+    id IDENTITY NOT NULL PRIMARY KEY,
+    title VARCHAR NOT NULL,
+    content VARCHAR NOT NULL
+);
