@@ -1,6 +1,6 @@
-package com.ua.project.note;
+package com.ua.project.features.note;
 
-import com.ua.project.crud.CRUDService;
+import com.ua.project.features.crud.CRUDService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

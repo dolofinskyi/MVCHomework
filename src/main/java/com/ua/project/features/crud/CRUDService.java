@@ -1,4 +1,4 @@
-package com.ua.project.crud;
+package com.ua.project.features.crud;
 
 import java.util.List;
 

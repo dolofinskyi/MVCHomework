@@ -1,4 +1,4 @@
-package com.ua.project.note;
+package com.ua.project.features.note;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
